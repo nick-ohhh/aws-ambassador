@@ -264,7 +264,7 @@ workflows:
                 role_arn: arn:aws:iam::992382483259:role/ambassador-nicko
                 role_session_name: example-session
           cluster: ambassador-nicko
-          container_image_name_updates: container=ambassador-amd,image-and-tag=public.ecr.aws/${AWS_ECR_PUBLIC_REGISTRY_ALIAS}/ambassador:${CIRCLE_SHA1}
+          container_image_name_updates: container=ambassador-nicko-amd,image-and-tag=public.ecr.aws/${AWS_ECR_PUBLIC_REGISTRY_ALIAS}/ambassador:${CIRCLE_SHA1}
           family: ambassador-nicko-amd
           service_name: ambassador-nicko
           profile_name: default
@@ -277,7 +277,7 @@ workflows:
                 role_arn: arn:aws:iam::992382483259:role/ambassador-nicko
                 role_session_name: example-session
           cluster: ambassador
-          container_image_name_updates: container=ambassador-amd,image-and-tag=public.ecr.aws/${AWS_ECR_PUBLIC_REGISTRY_ALIAS}/ambassador:${CIRCLE_SHA1}
+          container_image_name_updates: container=ambassador-nicko-amd,image-and-tag=public.ecr.aws/${AWS_ECR_PUBLIC_REGISTRY_ALIAS}/ambassador:${CIRCLE_SHA1}
           family: ambassador-nicko-arm
           service_name: ambassador-nicko-arm
           profile_name: default
